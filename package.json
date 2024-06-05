@@ -7,7 +7,8 @@
     "format": "lint-staged",
     "start": "nodemon --inspect src/index.js",
     "watch": "sass --watch src/resources/scss/app.scss src/public/css/app.css ",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -21,14 +22,13 @@
   ],
   "author": "phunghm",
   "license": "ISC",
-        "bugs": {
+  "bugs": {
     "url": "https://github.com/phunghoang1509/NodeJs_project/issues"
   },
-        "homepage": "https://github.com/phunghoang1509/NodeJs_project#readme",
-    "lint-staged": {
-      "prettier 'src/**/*.{js,json,scss}'": "--tab-width 4 --write --single-quote --trailing-comma all"
-    },
-
+  "homepage": "https://github.com/phunghoang1509/NodeJs_project#readme",
+        "lint-staged": {
+              "prettier 'src/**/*.{js,json,scss}'": "--tab-width 4 --write --single-quote --trailing-comma all"
+          },
   "hooks": {
     "pre-commit": "lint-staged"
   },
